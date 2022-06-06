@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+*{
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 4rem;
+}
+.header{
+    display: flex;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding-bottom: 2.5rem;
+    position: fixed;
+    border-bottom: 0.5rem solid var(--text-shadow);
+}
+.header .logo{
+   width: 15rem;
+   margin-left: 12rem;
+   font-size: 2.5rem;
+   margin-top: 2rem;
+   color:var(--black);
+}
+.header .logo i{
+    color: var(--green);
+    padding-right: 0.3rem;
+}
+.header .nav{
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 56rem;
+}
+.header .nav a{
+    color: var(--light-color);
+    transition: 0.5s;
+}
+.header .nav a:hover{
+    color: var(--green);
+    padding-bottom: 1rem;
+}
+section:nth-child(even){
+    background-color: #f5f5f5;
+}
+.home{
+    display: flex;
+}
+.home .home-left{
+   margin-left: 11rem;
+}
+.home .home-left .img{
+    width: 65rem;
+    margin-top: 8rem;
+}
+.home .home-right h1{
+    font-size: 4rem;
+    margin-top: 20rem;
+    padding-bottom: 1rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+.home .home-right p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    color: var(--light-color);
+}
+#btn{
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--green);
+    font-size: 1.8rem;
+    color: var(--green);
+    padding: 0.7rem 0.6rem;
+    transition: ease-in-out 0.1s;
+}
+#btn i{
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    transition: ease-in-out 0.1s;
+}
+#btn:hover {
+    color: #fff;
+    background-color: var(--green);
+    transform: scaleX(0.5);
+}
+#btn:hover i{
+    background-color: #fff;
+    color: var(--green);
+    margin-left: 1.4rem;
+}
+.icon-container{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 9rem;
+}
+.icon-container .icon-inside{
+    border: 0.2rem solid var(--green);
+    border-radius: 0.7rem;
+    width: 30rem;
+    height: 20.5rem;
+    margin-left: 2.5rem;
+    box-shadow: var(--box-shadow);
+}
+.icon-container .icon-inside .fas{
+    margin-left: 12.5rem;
+    font-size: 5rem;
+    color: var(--green);
+    margin-top: 2rem;
+}
+.icon-container .icon-inside h1{
+    font-size: 4.5rem;
+    text-shadow: var(--text-shadow);
+    margin-left: 9rem;
+}
+.icon-container .icon-inside p{
+    padding-top: 1rem;
+    margin-left: 6.5rem;
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+.service{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.service h1{
+    font-size: 4rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.service h1 span{
+    color: var(--green);
+}
+.service .service-data{
+   margin-left: 9rem;
+   margin-right: -8.5rem;
+}
+.service .service-data .service-info{
+    border: 0.2rem solid var(--green);
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 32rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+.service .service-data .service-info span{
+    padding-top: 2.5rem;
+    font-size: 5rem;
+    color:var(--green);
+    margin-left: 2rem;
+}
+.service .service-data .service-info h2{
+    font-size: 2.7rem;
+    padding-left: 2rem;
+    color: var(--black);
+    padding-top: 2rem;
+}
+.service .service-data .service-info p{
+    color: var(--light-color);
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    line-height: 2;
+    padding-bottom: 3rem;
+}
+.service .service-data .service-info #btn{
+    margin-left: 2rem;
+}
+.about{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.about h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+.about span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+.about .about-data{
+    display: flex;
+}
+.about .about-data .about-left .img{
+   width: 63rem;
+   margin-left: 14rem;
+   margin-top: 6.5rem;
+}
+.about .about-data .about-right h2{
+    margin-top: 20rem;
+    font-size: 4rem;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    padding-bottom: 2rem;
+}
+.about .about-data .about-right p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-bottom: 2.5rem;
+}
+.doctor{
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    
+}
+.doctor h1{
+    padding-top: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+.doctor span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+.doctor .doctor-data{
+    margin-left: 11rem;
+}
+.doctor .doctor-data .doctor-info{
+    width: 41rem;
+    height: 41rem;
+    border: 0.23rem solid var(--green);
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);  
+    display: inline-block; 
+}
+.doctor .doctor-data .doctor-info .docImg{
+    width: 20rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    margin-left: 10rem;
+    border: 0.23rem solid var(--green);
+}
+.doctor .doctor-data .doctor-info h2{
+    text-align: center;
+    font-size: 2.7rem;
+    color: var(--light-color);
+    padding-top: 1.5rem;
+}
+.doctor .doctor-data .doctor-info p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--green);
+    padding-bottom: 2rem;
+}
+.doctor .doctor-data .doctor-info .social{
+    margin-left: 8rem;
+}
+.doctor .doctor-data .doctor-info .social .fab{
+    font-size: 2rem;
+    color: var(--green);
+    padding-top: 2rem;
+    border: 0.2rem solid var(--green);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.4rem;
+    margin-left: 0.5rem;
+    padding: 1.2rem 1.5rem;
+    transition: 0.5s;
+}
+.doctor .doctor-data .doctor-info .social .fab:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+.book{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.book h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    text-shadow: var(--text-shadow);
+}
+.book span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.book .book-data{
+    display: flex;
+}
+.book .book-data .book-left .bookImg{
+   width: 60rem;
+   margin-left: 13rem;
+}
+.book .book-data .book-right form{
+   margin-top: 10rem;
+   width: 60rem;
+   height: 40rem;
+   border: 0.23rem solid var(--green);
+   margin-left: 7rem;
+   border-radius: 0.5rem;
+   box-shadow: var(--box-shadow);
+}
+.book .book-data .book-right form h3{
+    margin-top: 2rem;
+   text-align: center;
+   font-size: 3rem;
+   color: var(--black);
+}
+.book .book-data .book-right form .box{
+    width: 55rem;
+    height: 4.5rem;
+    border: 0.25rem solid var(--green);
+    margin-left: 2.6rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1.3rem;
+}
+.book .book-data .book-right form .btn{
+    margin-left: 25rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    border: 0.22rem solid var(--green);
+    padding: 0.8rem 3.5rem;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+.book .book-data .book-right form .btn:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+.review{
+   margin-top: 2rem;
+   margin-bottom: 2rem; 
+}
+.review h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    text-shadow: var(--text-shadow);
+}
+.review span{
+    text-transform: uppercase;
+    color: var(--green);
+}
+.review .review-data{
+   display: flex;
+   margin-left: 10rem;
+   margin-right: 11rem;
+}
+.review .review-data .review-info{
+   width: 50rem;
+   height: 45rem;
+   border: 0.28rem solid var(--green);
+   margin-left: 2rem;
+   border-radius: 0.5rem;
+   box-shadow: var(--text-shadow);
+}
+.review .review-data .review-info .pic{
+    width: 12rem;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    border-radius: 7rem;
+}
+.review .review-data .review-info h2{
+    color: var(--green);
+    font-size: 2.5rem;
+    text-align: center;
+}
+.review .review-data .review-info .rate{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: var(--green);
+}
+.review .review-data .review-info p{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--light-color);
+}
+.blog{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.blog h1{
+    text-align: center;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+    padding-bottom: 2rem;
+}
+.blog span{
+  color: var(--green);
+  text-transform: uppercase;
+}
+.blog .blog-data{
+    display: flex;
+    margin-left: 9.5rem;
+    margin-right: 8rem;
+}
+.blog .blog-data .blog-info{
+    width: 42rem;
+    height: 47rem;
+    border: 0.3rem solid var(--green);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+}
+.blog .blog-data .blog-info:hover .show{
+  transform: scale(1.05);
+}
+.blog .blog-data .blog-info .show{
+    width: 37rem;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    position: relative;
+}
+.blog .blog-data .blog-info .icon{
+    display: flex;
+    padding-top: 2rem;
+}
+.blog .blog-data .blog-info i{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+.blog .blog-data .blog-info a{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.blog .blog-data .blog-info .icon i{
+    margin-left: 2rem;
+}
+.blog .blog-data .blog-info .icon .cal{
+    margin-left: 15.5rem;
+}
+.blog .blog-data .blog-info h2{
+    padding-top: 2rem;
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.blog .blog-data .blog-info p{
+    padding-top: 2rem;
+    color: var(--light-color);
+    margin-left: 2.2rem;
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+.blog .blog-data .blog-info #btn{
+    margin-left: 2rem;
+}
+.footer{
+    height: 50rem;
+}
+.footer .box-container{
+    display: flex;
+    margin-left: 11rem;
+}
+.footer .box-container .box{
+    display: grid;
+    margin-top: 4rem;
+    padding-right: 18rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.6rem;
+}
+.footer .box-container .box i{
+    color: var(--green);
+}
+.footer .box-container .box a{
+    line-height: 3;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    transition: 0.5s ease-in;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    margin-left: 11rem;
+    margin-right: 6rem;
+
+}
+.footer .credit span{
+    color: var(--green);
+}
